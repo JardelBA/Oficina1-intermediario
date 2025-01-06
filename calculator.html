@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="/img/estetoscopio.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Serviços</a>
+    <a href="contact.html">Contato</a>
+    <a href="about.html">Sobre</a>
+    <a href="calculator.html">Calculadora IMC</a>
+  </nav>
+</header>
+<main>
+  <br><br><br>
+  <div class="calculator-container">
+  <div class="calculator">
+    <h2>Calculadora de IMC</h2>
+    <input type="number" id="weight" placeholder="Peso em kg" required>
+    <input type="number" id="height" placeholder="Altura em metros" required>
+    <button onclick="calculateIMC()">Calcular IMC</button>
+    <div id="result" class="result"></div>
+  </div>
+  <br><br><br>
+  <div class="calculator">
+    <h2>Calculadora de Taxa Metabólica Basal</h2>
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+      <option value="M">Masculino</option>
+      <option value="F">Feminino</option>
+    </select>
+    <br><br>
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso">
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura">
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade">
+    <button onclick="calcularTMB()">Calcular</button>
+    <p id="resultado"></p>
+  </div>
+  <br><br><br>
+  <div class="calculator">
+    <h2>Calculadora de água diaria</h2>
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso"><br>
+    <button onclick="calcularAgua()">Calcular</button>
+    <p id="valor"></p>
+  </div>
+  <br><br><br>
+</div>
+</main>
+<footer>
+  <p>&copy; 2024 Saúde e Bem-Estar | Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
